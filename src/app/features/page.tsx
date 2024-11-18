@@ -13,6 +13,18 @@ import Operator from '../Components/FeaturesComponents/Operator/Operator'
 import OnePlace from '../Components/FeaturesComponents/OnePlace/OnePlace'
 import OperatorBTN from '../Components/FeaturesComponents/OperatorBTN/OperatorBTN'
 import MyHub from '../Components/FeaturesComponents/MyHub/MYHub'
+import HubServices from '../Components/FeaturesComponents/HubServices/HubServices'
+import HubBTN from '../Components/FeaturesComponents/HubBTN/HubBTN'
+import WebApp from '../Components/FeaturesComponents/WebApp/WebApp'
+import WebAppService from '../Components/FeaturesComponents/WebAppService/WebAppService'
+import WebAppBTN from '../Components/FeaturesComponents/WebAppBTN/WebAppBTN'
+import BusinessVerticals from '../Components/FeaturesComponents/BusinessVertical/BusinessVertical'
+import BusinessServices from '../Components/FeaturesComponents/BusinessServices/BusinessServices'
+import BusinessBTN from '../Components/FeaturesComponents/BusinessBTN/BusinessBTN'
+import MigrationHeader from '../Components/FeaturesComponents/MigrationHeader/MigrationHeader'
+import ChallengeImage from '../Components/FeaturesComponents/ChallengeImage/ChallegeImage'
+import TourPlateform from '../Components/FeaturesComponents/TourPlateform/TourPlateform'
+
 
 const page = () => {
   return (
@@ -56,6 +68,39 @@ const page = () => {
       </div>
       <div className='mt-4'>
       <MyHub/>
+      </div>
+      <div className='mt-4'>
+      <HubServices/>
+      </div>
+      <div className='mt-10'>
+      <HubBTN/>
+      </div>
+      <div className='mt-10'>
+      <WebApp/>
+      </div>
+      <div className='mt-4'>
+      <WebAppService/>
+      </div>
+      <div className='mt-10'>
+      <WebAppBTN/>
+      </div>
+      <div className='mt-10'>
+      <BusinessVerticals/>
+      </div>
+      <div className='mt-4'>
+      <BusinessServices/>
+      </div>
+      <div className='mt-10'>
+      <BusinessBTN/>
+      </div>
+      <div className='mt-10'>
+      <MigrationHeader/>
+      </div>
+      <div className='mt-10'>
+      <ChallengeImage/>
+      </div>
+      <div className='mt-10'>
+      <TourPlateform/>
       </div>
     
     </div>
