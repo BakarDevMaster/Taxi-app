@@ -9,6 +9,7 @@ const Navbar: React.FC = () => {
   const [isGoToOpen, setIsGoToOpen] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
+  const [activeLink, setActiveLink] = useState<string>('features'); // Track active link
 
   // Ensuring hydration by only rendering on the client side
   useEffect(() => {
@@ -17,6 +18,11 @@ const Navbar: React.FC = () => {
 
   // Prevent rendering on the server side
   if (!isClient) return null;
+
+  // Function to handle active link
+  const handleLinkClick = (link: string) => {
+    setActiveLink(link);
+  };
 
   return (
     <nav className="flex items-center px-6 sm:px-24 justify-between p-4 border-b border-gray-200 bg-white">
@@ -29,22 +35,38 @@ const Navbar: React.FC = () => {
         {/* Navigation Links */}
         <ul className="hidden md:flex ml-10 space-x-8 text-black text-base">
           <li>
-            <Link href="/features" className="text-green-500 font-bold hover:text-green-600">
+            <Link
+              href="/features"
+              className={`font-bold hover:text-green-600 ${activeLink === 'features' ? 'text-green-500' : ''}`}
+              onClick={() => handleLinkClick('features')}
+            >
               Features
             </Link>
           </li>
           <li>
-            <Link href="/products" className="hover:text-gray-600 font-bold">
+            <Link
+              href="/products"
+              className={`font-bold hover:text-gray-600 ${activeLink === 'products' ? 'text-green-500' : ''}`}
+              onClick={() => handleLinkClick('products')}
+            >
               Products
             </Link>
           </li>
           <li>
-            <Link href="/pricing" className="hover:text-gray-600 font-bold">
+            <Link
+              href="/pricing"
+              className={`font-bold hover:text-gray-600 ${activeLink === 'pricing' ? 'text-green-500' : ''}`}
+              onClick={() => handleLinkClick('pricing')}
+            >
               Pricing
             </Link>
           </li>
           <li>
-            <Link href="/support" className="hover:text-gray-600 font-bold">
+            <Link
+              href="/support"
+              className={`font-bold hover:text-gray-600 ${activeLink === 'support' ? 'text-green-500' : ''}`}
+              onClick={() => handleLinkClick('support')}
+            >
               Support
             </Link>
           </li>
