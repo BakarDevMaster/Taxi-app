@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ChevronDown, Globe } from 'lucide-react';
 
@@ -10,6 +10,10 @@ const Navbar: React.FC = () => {
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const [activeLink, setActiveLink] = useState<string>('features'); // Track active link
+
+  const resourcesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const languageTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const goToTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Ensuring hydration by only rendering on the client side
   useEffect(() => {
@@ -24,8 +28,23 @@ const Navbar: React.FC = () => {
     setActiveLink(link);
   };
 
+  // Delay function to handle the dropdown close delay
+  const handleMouseLeave = (setter: React.Dispatch<React.SetStateAction<boolean>>, timeoutRef: React.MutableRefObject<NodeJS.Timeout | null>) => {
+    timeoutRef.current = setTimeout(() => {
+      setter(false);
+    }, 200); // Adjust delay as needed
+  };
+
+  // Clear timeout when mouse enters dropdown
+  const handleMouseEnter = (setter: React.Dispatch<React.SetStateAction<boolean>>, timeoutRef: React.MutableRefObject<NodeJS.Timeout | null>) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    setter(true);
+  };
+
   return (
-    <nav className="flex items-center px-6 sm:px-24 justify-between p-4 border-b border-gray-200 bg-white">
+    <nav className="sticky top-0 z-50 flex items-center px-6 sm:px-24 justify-between p-4 border-b border-gray-200 bg-white">
       <div className="flex items-center">
         {/* Logo */}
         <Link href="/">
@@ -72,8 +91,8 @@ const Navbar: React.FC = () => {
           </li>
           <li
             className="relative flex items-center space-x-1 hover:text-gray-600 cursor-pointer"
-            onMouseEnter={() => setIsResourcesOpen(true)}
-            onMouseLeave={() => setIsResourcesOpen(false)}
+            onMouseEnter={() => handleMouseEnter(setIsResourcesOpen, resourcesTimeoutRef)}
+            onMouseLeave={() => handleMouseLeave(setIsResourcesOpen, resourcesTimeoutRef)}
           >
             <span>Resources</span>
             <ChevronDown
@@ -82,15 +101,34 @@ const Navbar: React.FC = () => {
               }`}
             />
             {isResourcesOpen && (
-              <ul className="absolute top-full mt-2 w-32 bg-white border border-gray-300 rounded-md shadow-lg">
+              <ul
+                className="absolute top-full mt-2 w-32 bg-white border border-gray-300 rounded-md shadow-lg"
+                onMouseEnter={() => handleMouseEnter(setIsResourcesOpen, resourcesTimeoutRef)}
+                onMouseLeave={() => handleMouseLeave(setIsResourcesOpen, resourcesTimeoutRef)}
+              >
                 <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/blog">Blog</Link>
+                  <Link href="/mobile-app-marketing-agency">Agency</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/guides">Guides</Link>
+                  <Link href="/guides">Ride-hailing apps</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/webinars">Webinars</Link>
+                  <Link href="/webinars">Case studies</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  <Link href="/webinars">Learn</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  <Link href="/webinars">Blog</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  <Link href="/webinars">RNN</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  <Link href="/webinars">Factory</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  <Link href="/webinars">Events</Link>
                 </li>
               </ul>
             )}
@@ -102,8 +140,8 @@ const Navbar: React.FC = () => {
         {/* Language Dropdown */}
         <div
           className="relative"
-          onMouseEnter={() => setIsLanguageOpen(true)}
-          onMouseLeave={() => setIsLanguageOpen(false)}
+          onMouseEnter={() => handleMouseEnter(setIsLanguageOpen, languageTimeoutRef)}
+          onMouseLeave={() => handleMouseLeave(setIsLanguageOpen, languageTimeoutRef)}
         >
           <div className="flex items-center space-x-1 cursor-pointer">
             <Globe className="w-5 h-5 text-black" />
@@ -115,7 +153,11 @@ const Navbar: React.FC = () => {
             />
           </div>
           {isLanguageOpen && (
-            <ul className="absolute top-full mt-2 w-20 bg-white border border-gray-300 rounded-md shadow-lg">
+            <ul
+              className="absolute top-full mt-2 w-20 bg-white border border-gray-300 rounded-md shadow-lg"
+              onMouseEnter={() => handleMouseEnter(setIsLanguageOpen, languageTimeoutRef)}
+              onMouseLeave={() => handleMouseLeave(setIsLanguageOpen, languageTimeoutRef)}
+            >
               <li className="p-2 hover:bg-gray-100 cursor-pointer">EN</li>
               <li className="p-2 hover:bg-gray-100 cursor-pointer">FR</li>
               <li className="p-2 hover:bg-gray-100 cursor-pointer">ES</li>
@@ -126,8 +168,8 @@ const Navbar: React.FC = () => {
         {/* Go To Dropdown */}
         <div
           className="relative"
-          onMouseEnter={() => setIsGoToOpen(true)}
-          onMouseLeave={() => setIsGoToOpen(false)}
+          onMouseEnter={() => handleMouseEnter(setIsGoToOpen, goToTimeoutRef)}
+          onMouseLeave={() => handleMouseLeave(setIsGoToOpen, goToTimeoutRef)}
         >
           <button className="flex items-center border border-gray-400 px-3 py-1 rounded-md text-black hover:bg-gray-100">
             Go To
@@ -138,7 +180,11 @@ const Navbar: React.FC = () => {
             />
           </button>
           {isGoToOpen && (
-            <ul className="absolute top-full mt-2 w-32 bg-white border border-gray-300 rounded-md shadow-lg">
+            <ul
+              className="absolute top-full mt-2 w-32 bg-white border border-gray-300 rounded-md shadow-lg"
+              onMouseEnter={() => handleMouseEnter(setIsGoToOpen, goToTimeoutRef)}
+              onMouseLeave={() => handleMouseLeave(setIsGoToOpen, goToTimeoutRef)}
+            >
               <li className="p-2 hover:bg-gray-100 cursor-pointer">
                 <Link href="/dashboard">Dashboard</Link>
               </li>
