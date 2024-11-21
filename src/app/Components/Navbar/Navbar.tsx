@@ -110,26 +110,15 @@ const Navbar: React.FC = () => {
                   <Link href="/mobile-app-marketing-agency">Agency</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/guides">Ride-hailing apps</Link>
+                  <Link href="/top-ride-hailing-platforms">Ride-hailing apps</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/webinars">Case studies</Link>
+                  <Link href="/cases">Case studies</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/webinars">Learn</Link>
+                  <Link href="/learn">Learn</Link>
                 </li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/webinars">Blog</Link>
-                </li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/webinars">RNN</Link>
-                </li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/webinars">Factory</Link>
-                </li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/webinars">Events</Link>
-                </li>
+               
               </ul>
             )}
           </li>
