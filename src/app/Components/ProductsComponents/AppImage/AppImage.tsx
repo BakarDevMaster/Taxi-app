@@ -47,7 +47,7 @@ const AppImage = () => {
             {/* Description */}
             <p className="text-white/90 text-lg leading-relaxed mb-8">
               Customizable application to attract customers in your city, as well as visiting tourists. 
-              Easy-to-use app that knows users' location and language, and the design makes the service enjoyable. 
+              Easy-to-use app that knows user&apos;s location and language, and the design makes the service enjoyable. 
               Full control of the payment methods available in your company for customers. 
               Let customers rate drivers and drivers rate customers. 
               Wide variety of service types for every occasion. 

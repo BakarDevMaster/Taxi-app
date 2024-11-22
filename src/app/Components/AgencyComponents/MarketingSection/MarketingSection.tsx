@@ -33,7 +33,7 @@ const MarketingTrustSection = () => {
               Niche ride-hailing expertise
             </h2>
             <p className="text-gray-600 mb-4">
-              We've worked in the ride-hailing industry for more than a decade. We know it inside out, and we're happy to share this knowledge.
+              We&apos;ve worked in the ride-hailing industry for more than a decade. We know it inside out, and we&apos;re happy to share this knowledge.
             </p>
             <p className="text-gray-600">
               We measure performance thoroughly. Every campaign and every event is tracked with product analytics tools.
@@ -61,7 +61,7 @@ const MarketingTrustSection = () => {
       {/* Right Image Section */}
       <div className="w-full lg:w-1/2 relative">
         <div className="sticky top-0 h-screen flex items-center justify-center">
-          <img 
+          <img
             src="/api/placeholder/400/800" 
             alt="Marketing Visual" 
             className="h-auto max-h-[90vh] w-auto object-contain"
