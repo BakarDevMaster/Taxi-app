@@ -13,7 +13,7 @@ const ExpertsSection = () => {
     },
     {
       title: "Brand manager",
-      description: "Unlocks your brand's unique value and translates it into an inspiring creative idea for the ad campaigns"
+      description: "Unlocks your brand&apos;s unique value and translates it into an inspiring creative idea for the ad campaigns"
     },
     {
       title: "Copywriter",

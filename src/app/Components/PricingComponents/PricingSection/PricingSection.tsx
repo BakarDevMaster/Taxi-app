@@ -10,7 +10,6 @@ const PricingCard = ({
   description,
   features,
   additionalFeatures,
-  imageSrc,
   isPopular,
   buttonText = "Let's chat"
 }) => {

@@ -13,7 +13,7 @@ const AppTreatmentSection = () => {
         </h2>
         <div className="space-y-2">
           <p className="text-gray-700 text-lg">Your results are our results.</p>
-          <p className="text-gray-700 text-lg">This is how you know we'll strive for the best.</p>
+          <p className="text-gray-700 text-lg">This is how you know we&apos;ll strive for the best.</p>
         </div>
       </div>
 

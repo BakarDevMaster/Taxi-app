@@ -16,7 +16,7 @@ const CaseStudies: React.FC = () => {
         <h2 className="text-5xl font-bold">Check Case studies</h2>
         <p className="text-gray-600 mt-2">
           Discover how taxi companies worldwide compete with <br /> Uber, Bolt, and
-          other industry giants with Onde's solution under the hood.
+          other industry giants with Onde&apos;s solution under the hood.
         </p>
       </div>
 

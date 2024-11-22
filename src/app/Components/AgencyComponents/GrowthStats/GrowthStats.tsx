@@ -16,7 +16,7 @@ const GrowthStats: React.FC<GrowthStatsProps> = ({
         {/* Left Content Section */}
         <div className="w-full md:w-1/2 space-y-6">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-            <span className="block">You'll love</span>
+            <span className="block">You&apos;ll love</span>
             <span className="block">seeing your</span>
             <span className="text-[#00B354]">numbers grow</span>
           </h2>

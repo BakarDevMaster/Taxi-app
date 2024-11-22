@@ -21,7 +21,7 @@ const PricingPlaneSection = () => {
                 Need a custom <br /> plan?
               </h2>
               <p className="text-base md:text-lg lg:text-xl text-white/90 font-thin mb-12 max-w-2xl">
-                Share your goals and challenges with us, and we'll create <br /> a custom plan tailored to your needs.
+                Share your goals and challenges with us, and we&apos;ll create <br /> a custom plan tailored to your needs.
               </p>
               <button className="bg-emerald-500 hover:bg-emerald-600 text-white text-xl lg:text-2xl font-semibold px-12 py-7 rounded-lg transition-colors duration-200">
                 Contact us

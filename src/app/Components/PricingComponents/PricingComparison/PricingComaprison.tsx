@@ -330,7 +330,7 @@ type PlanFeature = {
                   }`}
                 >
                   <button className="w-full py-2 px-4 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors">
-                    Let's discuss
+                    Let&apos;s discuss
                   </button>
                 </div>
               ))}

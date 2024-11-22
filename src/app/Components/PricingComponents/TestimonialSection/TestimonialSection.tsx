@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
   },
   {
     title: "Quick setup with full customization",
-    content: "We were able to launch our transportation service rapidly with complete branding and localization features. The platform's intuitive setup process got us operational in minimal time.",
+    content: "We were able to launch our transportation service rapidly with complete branding and localization features. The platform&apos;s intuitive setup process got us operational in minimal time.",
     author: "David K.",
     position: "Director",
     rating: 5
@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
             Join 400+ businesses all over the world
           </h2>
           <p className="text-gray-400 text-2xl font-bold mb-8">
-            Here's what our partners <br /> say about why they chose us
+            Here&apos;s what our partners <br /> say about why they chose us
           </p>
           <button className="bg-emerald-500 text-white px-8 py-3 rounded-lg hover:bg-emerald-600 transition-colors">
             Get started
