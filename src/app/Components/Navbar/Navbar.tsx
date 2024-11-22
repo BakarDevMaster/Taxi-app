@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { ChevronDown, Globe } from 'lucide-react';
 
 const Navbar: React.FC = () => {
@@ -10,6 +10,8 @@ const Navbar: React.FC = () => {
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const [activeLink, setActiveLink] = useState<string>('features'); // Track active link
+
+  const router = useRouter();
 
   const resourcesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const languageTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -26,6 +28,7 @@ const Navbar: React.FC = () => {
   // Function to handle active link
   const handleLinkClick = (link: string) => {
     setActiveLink(link);
+    router.push(`/${link}`);
   };
 
   // Delay function to handle the dropdown close delay
@@ -47,47 +50,46 @@ const Navbar: React.FC = () => {
     <nav className="sticky top-0 z-50 flex items-center px-6 sm:px-24 justify-between p-4 border-b border-gray-200 bg-white">
       <div className="flex items-center">
         {/* Logo */}
-        <Link href="/">
-          <div className="text-4xl font-bold text-black cursor-pointer">onde</div>
-        </Link>
+        <div
+          className="text-4xl font-bold text-black cursor-pointer"
+          onClick={() => router.push('/')}
+        >
+          onde
+        </div>
 
         {/* Navigation Links */}
         <ul className="hidden md:flex ml-10 space-x-8 text-black text-base">
           <li>
-            <Link
-              href="/features"
-              className={`font-bold hover:text-green-600 ${activeLink === 'features' ? 'text-green-500' : ''}`}
+            <span
+              className={`font-bold hover:text-green-600 cursor-pointer ${activeLink === 'features' ? 'text-green-500' : ''}`}
               onClick={() => handleLinkClick('features')}
             >
               Features
-            </Link>
+            </span>
           </li>
           <li>
-            <Link
-              href="/products"
-              className={`font-bold hover:text-gray-600 ${activeLink === 'products' ? 'text-green-500' : ''}`}
+            <span
+              className={`font-bold hover:text-gray-600 cursor-pointer ${activeLink === 'products' ? 'text-green-500' : ''}`}
               onClick={() => handleLinkClick('products')}
             >
               Products
-            </Link>
+            </span>
           </li>
           <li>
-            <Link
-              href="/pricing"
-              className={`font-bold hover:text-gray-600 ${activeLink === 'pricing' ? 'text-green-500' : ''}`}
+            <span
+              className={`font-bold hover:text-gray-600 cursor-pointer ${activeLink === 'pricing' ? 'text-green-500' : ''}`}
               onClick={() => handleLinkClick('pricing')}
             >
               Pricing
-            </Link>
+            </span>
           </li>
           <li>
-            <Link
-              href="/support"
-              className={`font-bold hover:text-gray-600 ${activeLink === 'support' ? 'text-green-500' : ''}`}
+            <span
+              className={`font-bold hover:text-gray-600 cursor-pointer ${activeLink === 'support' ? 'text-green-500' : ''}`}
               onClick={() => handleLinkClick('support')}
             >
               Support
-            </Link>
+            </span>
           </li>
           <li
             className="relative flex items-center space-x-1 hover:text-gray-600 cursor-pointer"
@@ -106,19 +108,18 @@ const Navbar: React.FC = () => {
                 onMouseEnter={() => handleMouseEnter(setIsResourcesOpen, resourcesTimeoutRef)}
                 onMouseLeave={() => handleMouseLeave(setIsResourcesOpen, resourcesTimeoutRef)}
               >
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/mobile-app-marketing-agency">Agency</Link>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer" onClick={() => router.push('/mobile-app-marketing-agency')}>
+                  Agency
                 </li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/top-ride-hailing-platforms">Ride-hailing apps</Link>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer" onClick={() => router.push('/top-ride-hailing-platforms')}>
+                  Ride-hailing apps
                 </li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/cases">Case studies</Link>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer" onClick={() => router.push('/cases')}>
+                  Case studies
                 </li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                  <Link href="/learn">Learn</Link>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer" onClick={() => router.push('/learn')}>
+                  Learn
                 </li>
-               
               </ul>
             )}
           </li>
@@ -174,25 +175,23 @@ const Navbar: React.FC = () => {
               onMouseEnter={() => handleMouseEnter(setIsGoToOpen, goToTimeoutRef)}
               onMouseLeave={() => handleMouseLeave(setIsGoToOpen, goToTimeoutRef)}
             >
-              <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                <Link href="/dashboard">Dashboard</Link>
+              <li className="p-2 hover:bg-gray-100 cursor-pointer" onClick={() => router.push('/My hub')}>
+                My hub
               </li>
-              <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                <Link href="/profile">Profile</Link>
-              </li>
-              <li className="p-2 hover:bg-gray-100 cursor-pointer">
-                <Link href="/settings">Settings</Link>
+              <li className="p-2 hover:bg-gray-100 cursor-pointer" onClick={() => router.push('/Operator app')}>
+                Operator app
               </li>
             </ul>
           )}
         </div>
 
         {/* Try for Free Button */}
-        <Link href="/signup">
-          <button className="bg-[#1ee67b] text-white px-5 py-2 rounded-md hover:bg-[#00EF70]">
-            Try for free
-          </button>
-        </Link>
+        <button
+          className="bg-[#1ee67b] text-white px-5 py-2 rounded-md hover:bg-[#00EF70]"
+          onClick={() => router.push('/signup')}
+        >
+          Try for free
+        </button>
       </div>
     </nav>
   );
