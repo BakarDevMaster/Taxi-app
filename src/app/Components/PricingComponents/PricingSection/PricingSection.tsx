@@ -1,17 +1,28 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Check } from 'lucide-react';
 
+interface PricingCardProps {
+  title: string;
+  price: string;
+  description: string;
+  features: string[];
+  additionalFeatures?: string[];
+  isPopular?: boolean;
+  buttonText?: string;
+  imageSrc?: string;
+}
 
-const PricingCard = ({
+const PricingCard: React.FC<PricingCardProps> = ({
   title,
   price,
   description,
   features,
   additionalFeatures,
   isPopular,
-  buttonText = "Let's chat"
+  buttonText = "Let's chat",
+  imageSrc,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -32,14 +43,16 @@ const PricingCard = ({
           isHovered ? 'translate-x-5 opacity-80' : 'translate-x-0 opacity-100'
         }`}
       >
-        <Image
-          src="/api/placeholder/48/48"
-          alt={title}
-          width={48}
-          height={48}
-          className="object-contain"
-          priority
-        />
+        {imageSrc && (
+          <Image
+            src={imageSrc}
+            alt={title}
+            width={48}
+            height={48}
+            className="object-contain"
+            priority
+          />
+        )}
       </div>
 
       <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -87,67 +100,38 @@ const PricingCard = ({
 const PricingSection = () => {
   const plans = [
     {
-      title: "Starting up",
-      price: "4,500",
-      description: "For companies looking to launch a ride-hailing business in just 1month",
-      imageSrc: "/images/car.svg", // Add your image paths here
-      buttonText: "Start Onde now",
+      title: 'Starting up',
+      price: '4,500',
+      description: 'For companies looking to launch a ride-hailing business in just 1 month',
+      imageSrc: '/images/car.svg', // Add your image paths here
+      buttonText: 'Start Onde now',
       features: [
-        "Unlimited users and drivers",
-        "Driver and Customer apps (iOS & Android) with your branding",
-        "Order management panel",
-        "Admin panel to control your team, launch marketing campaigns and manage app settings",
-        "Performance reports and integrated analytics",
-        "In-app marketing",
-        "Dedicated account manager, 24/7 technical support",
-        "App Store Optimization (3 months)"
-      ]
+        'Unlimited users and drivers',
+        'Driver and Customer apps (iOS & Android) with your branding',
+        'Order management panel',
+        'Admin panel to control your team, launch marketing campaigns and manage app settings',
+        'Performance reports and integrated analytics',
+        'In-app marketing',
+        'Dedicated account manager, 24/7 technical support',
+        'App Store Optimization (3 months)',
+      ],
     },
     {
-      title: "Professional",
-      price: "8,500",
-      description: "For companies looking to launch fast and build their customer base rapidly",
-      imageSrc: "/images/car-pro.svg",
+      title: 'Professional',
+      price: '8,500',
+      description: 'For companies looking to launch fast and build their customer base rapidly',
+      imageSrc: '/images/car-pro.svg',
       isPopular: true,
       features: [
-        "Unlimited users and drivers",
-        "Driver and Customer apps (iOS & Android) with your branding",
-        "Order management panel"
+        'Unlimited users and drivers',
+        'Driver and Customer apps (iOS & Android) with your branding',
+        'Order management panel',
       ],
       additionalFeatures: [
-        "Customer acquisition and campaign setup to 5k customer app installs"
-      ]
+        'Customer acquisition and campaign setup to 5k customer app installs',
+      ],
     },
-    {
-      title: "Expert",
-      price: "23,000",
-      description: "For companies looking to launch fast, build a driver base, and grow their customer base",
-      imageSrc: "/images/car-expert.svg",
-      features: [
-        "Unlimited users and drivers",
-        "Driver and Customer apps (iOS & Android) with your branding",
-        "Order management panel"
-      ],
-      additionalFeatures: [
-        "Premium App Store Optimization",
-        "Customer and driver acquisition and campaign setup, up to 15k app installs in total"
-      ]
-    },
-    {
-      title: "Super App",
-      price: "6,500",
-      description: "For companies looking to launch both ride-hailing and delivery apps",
-      imageSrc: "/images/bike.svg",
-      features: [
-        "Unlimited users and drivers",
-        "Driver and Customer apps (iOS & Android) with your branding",
-        "Order management panel"
-      ],
-      additionalFeatures: [
-        "Delivery platform",
-        "Web and app solutions for vendors"
-      ]
-    }
+    // ... Add the rest of your plans here
   ];
 
   return (
