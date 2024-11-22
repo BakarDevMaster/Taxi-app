@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { Check } from 'lucide-react';
 
+
 const PricingCard = ({
   title,
   price,
