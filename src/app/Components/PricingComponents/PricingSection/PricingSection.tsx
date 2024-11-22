@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 
 const PricingCard = ({
@@ -28,13 +27,10 @@ const PricingCard = ({
         </div>
       )}
 
-      <motion.div
-        animate={{
-          x: isHovered ? 20 : 0,
-          opacity: isHovered ? 0.8 : 1
-        }}
-        transition={{ duration: 0.3 }}
-        className="w-12 h-12 mb-4 relative"
+      <div
+        className={`w-12 h-12 mb-4 relative transform transition-all duration-300 ${
+          isHovered ? 'translate-x-5 opacity-80' : 'translate-x-0 opacity-100'
+        }`}
       >
         <Image
           src="/api/placeholder/48/48"
@@ -44,7 +40,7 @@ const PricingCard = ({
           className="object-contain"
           priority
         />
-      </motion.div>
+      </div>
 
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-600 text-sm mb-4">{description}</p>
@@ -162,12 +158,10 @@ const PricingSection = () => {
         ))}
       </div>
       <div className="text-center mt-8">
-  <button className="text-gray-600 pb-1 border-b-2 border-dotted border-gray-600">
-    View all plan features
-  </button>
-</div>
-
-
+        <button className="text-gray-600 pb-1 border-b-2 border-dotted border-gray-600">
+          View all plan features
+        </button>
+      </div>
     </div>
   );
 };
