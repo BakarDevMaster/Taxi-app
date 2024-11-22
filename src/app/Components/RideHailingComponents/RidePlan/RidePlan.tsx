@@ -12,9 +12,9 @@ const RidePlan: React.FC = () => {
         <p className="mt-6  text-gray-600">
           At Onde, we provide a high-quality solution for our international
           partners. Many of our partners have grown into companies with hundreds
-          of thousands of monthly rides. They're now the leaders in their
-          markets. That's how we know our technology is reliable and scalable.
-          Though, have a look: here's how Onde's platform differs from other
+          of thousands of monthly rides. They&apos;re now the leaders in their
+          markets. That&apos;s how we know our technology is reliable and scalable.
+          Though, have a look: here&apos;s how Onde&apos;s platform differs from other
           white-label taxi platforms.
         </p>
       </div>
