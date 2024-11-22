@@ -9,7 +9,7 @@ const carouselItems = [
   },
   {
     imageSrc: '/images/almeny.jpg',
-    text: 'Almeny: Women Teaching Women To Drive in Saudi Arabia&apos;,
+    text: 'Almeny: Women Teaching Women To Drive in Saudi Arabia',
     tags: ['Middle East', 'Taxi', 'Software']
   },
   {

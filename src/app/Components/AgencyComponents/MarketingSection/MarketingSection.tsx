@@ -7,7 +7,7 @@ const MarketingTrustSection = () => {
       <div className="w-full lg:w-1/2 p-6 lg:p-12">
         <div className="sticky top-0 pt-4 pb-6 bg-white z-10">
           <h1 className="text-4xl lg:text-5xl font-bold">
-            Why should you{&apos;apos;apos;apos; &apos;}
+            Why should you{' '}
             <span className="text-emerald-500">trust us</span> with your
             marketing?
           </h1>
@@ -33,7 +33,7 @@ const MarketingTrustSection = () => {
               Niche ride-hailing expertise
             </h2>
             <p className="text-gray-600 mb-4">
-              We&apos;ve worked in the ride-hailing industry for more than a decade. We know it inside out, and we&apos;re happy to share this knowledge.
+              We've worked in the ride-hailing industry for more than a decade. We know it inside out, and we're happy to share this knowledge.
             </p>
             <p className="text-gray-600">
               We measure performance thoroughly. Every campaign and every event is tracked with product analytics tools.
