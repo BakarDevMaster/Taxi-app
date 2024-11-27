@@ -8,13 +8,13 @@ const LoyalDrivers = () => {
         {/* Header Content */}
         <div className=" flex justify-between mb-12">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Get loyal drivers with{' '}
-            <span className="text-[#512DA8] block">Customer app</span>
+          Driver App for {' '}
+            <span className="text-[#512DA8] block">Ride Click</span>
           </h2>
           
           <div className="max-w-96">
             <p className="text-gray-800 text-lg mb-4">
-            Let your drivers focus on the ride. Eliminate the need to communicate with operators, cut distractions, and motivate the drivers to work more efficiently.
+            Let drivers focus on their work with tools designed to simplify their tasks and boost efficiency.
             </p>
             {/* Green line below paragraph */}
             <div className="h-3 bg-[#512DA8] w-full"></div>

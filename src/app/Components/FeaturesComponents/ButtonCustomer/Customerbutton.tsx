@@ -8,7 +8,7 @@ interface CTAButtonProps {
 
 const CTAButton: React.FC<CTAButtonProps> = ({
   buttonText = "Try Customer app for free",
-  subtitleText = "Explore all Customer app features and capabilities",
+  subtitleText = "Test all the features of the Customer App now.",
   onClick
 }) => {
   return (

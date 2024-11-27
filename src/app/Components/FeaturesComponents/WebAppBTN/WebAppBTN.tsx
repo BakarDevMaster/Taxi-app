@@ -8,7 +8,7 @@ interface CTAButtonProps {
 
 const WebAppBTN: React.FC<CTAButtonProps> = ({
   buttonText = "Try Web app for free",
-  subtitleText = "See your business in action",
+  subtitleText = " Use the Web App for bookings today",
   onClick
 }) => {
   return (

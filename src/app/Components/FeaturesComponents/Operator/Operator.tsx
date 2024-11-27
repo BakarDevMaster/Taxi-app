@@ -8,14 +8,14 @@ const Operator = () => {
         {/* Header Content */}
         <div className=" flex justify-between mb-12">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Simplify management {' '}
+          Simplify Order {' '}
             
-            <span className="text-[#FFB300] block"><span className='text-black'>with</span> Customer app</span>
+            <span className="text-[#FFB300] block">Management</span>
           </h2>
           
           <div className="max-w-96">
             <p className="text-gray-800 text-lg mb-4">
-            Stop losing incoming orders and improve order distribution among drivers. Increase operators’ performance and scale your business using Onde taxi dispatch system.
+            Streamline incoming orders and distribute them efficiently among drivers with the taxi dispatch system.
             </p>
             {/* Green line below paragraph */}
             <div className="h-3 bg-[#FFB300] w-full"></div>

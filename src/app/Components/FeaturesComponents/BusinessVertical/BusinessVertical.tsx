@@ -8,14 +8,14 @@ const BusinessVerticals = () => {
         {/* Header Content */}
         <div className=" flex justify-between mb-12">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Launch <span className='text-[#FF5544]'>new business</span> {' '}
+          Expand  <span className='text-[#FF5544]'>Business</span> {' '}
             
-            <span className="text-[#FF5544] block">verticals</span>
+            <span className="text-[#FF5544] block">Offerings</span>
           </h2>
           
           <div className="max-w-96">
             <p className="text-gray-800 text-lg mb-4">
-            Use Onde to add delivery or courier services to your taxi services and turn your app into Super App.
+            Add courier and delivery services to your ride-hailing platform to offer a complete solution.
             </p>
             {/* Green line below paragraph */}
             <div className="h-3 bg-[#FF5544] w-full"></div>

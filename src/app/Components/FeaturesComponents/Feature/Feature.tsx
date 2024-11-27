@@ -29,18 +29,18 @@ const FeatureCard = ({ title, description, imageSrc }: FeatureCardProps) => (
 const FeatureSection = () => {
   const features = [
     {
-      title: "Your own branding",
-      description: "everyone will recognize your ride-hailing service",
+      title: "Your Branding",
+      description: "Ensure your service stands out with a recognizable and unique identity.",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Discount and referral programs",
-      description: "share your brand among family, friends, and collegues",
+      title: "Discount and Referral Programs",
+      description: "Encourage word-of-mouth promotion by rewarding users for sharing your service.",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "ASO and marketing services",
-      description: "drive app store installs and convert them into",
+      title: "ASO and Marketing Services",
+      description: "Drive app store downloads and convert them into active passengers.",
       imageSrc: "/api/placeholder/300/300",
     },
   ];

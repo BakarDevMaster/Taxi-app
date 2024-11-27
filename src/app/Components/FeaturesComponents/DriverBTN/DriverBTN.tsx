@@ -8,7 +8,7 @@ interface CTAButtonProps {
 
 const DriverBTN: React.FC<CTAButtonProps> = ({
   buttonText = "Try Driver app for free",
-  subtitleText = "Explore all Driver app features and capabilities",
+  subtitleText = "Explore all the features of the Driver App now",
   onClick
 }) => {
   return (

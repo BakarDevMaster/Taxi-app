@@ -8,7 +8,7 @@ interface CTAButtonProps {
 
 const OperatorBTN: React.FC<CTAButtonProps> = ({
   buttonText = "Try Operator app for free",
-  subtitleText = "Explore all Operator app features and capabilities",
+  subtitleText = "Test the Operator App today",
   onClick
 }) => {
   return (

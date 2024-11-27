@@ -48,14 +48,15 @@ const Hero: React.FC = () => {
     <div className="mx-auto pt-4 px-8 space-y-12">
       <div className="text-center space-y-4">
         <h1 className="text-[80px] font-bold">
-          Solving ride-hailing
+        Simplify Your Taxi 
           <br />
-          challenges with Onde
+          Operations with Ride Click
         </h1>
-        <p className="text-lg text-gray-600">
-          Discover how Onde products automate ride-hailing operations and
+        <p className="text-lg  mx-auto text-gray-600">
+        We make running your ride-hailing business easier by automating operations 
+
           <br />
-          business development processes.
+          and providing practical solutions to improve efficiency, keep your users engaged, and help your business grow.
         </p>
       </div>
 

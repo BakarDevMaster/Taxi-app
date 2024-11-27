@@ -29,33 +29,33 @@ const FeatureCard = ({ title, description, imageSrc }: FeatureCardProps) => (
 const  TexiServices = () => {
   const features = [
     {
-      title: "Effortless document registration",
-      description: "in any country",
+      title: "Quick Document Registration",
+      description: "Hassle-free onboarding for drivers",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Intuitive and driver-friendly interface",
-      description: "no learning required!",
+      title: "Intuitive Interface",
+      description: "No complex learning curves—easy for everyone to use",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Smart algorithm",
-      description: "to minimize driver’s idle time",
+      title: "Efficient Ride Allocation",
+      description: "Smart algorithms reduce idle time for drivers",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Familiar Uber-like features",
-      description: "real-time notifications, in-app chat, quick access buttons for frequent actions, etc.",
+      title: "Familiar Features",
+      description: "Includes notifications, in-app chat, and quick access buttons for convenience",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "High app performance",
-      description: "99.8% uptime, regular updates and app maintenance",
+      title: "Reliable Performance",
+      description: "High uptime and regular maintenance ensure smooth operation",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Secure communication",
-      description: "with customers",
+      title: "Secure Communication",
+      description: "Keeps driver-passenger interactions safe and private",
       imageSrc: "/api/placeholder/300/300",
     },
   ];
@@ -65,10 +65,10 @@ const  TexiServices = () => {
       <div className="space-y-8">
         <div className="space-y-4">
           <h2 className="text-4xl font-semibold text-gray-300">
-          Why will  <span className="font-semibold text-black">drivers choose
+          Why Drivers<span className="font-semibold text-black"> Prefer
             </span>
           </h2>
-          <h2 className="text-4xl font-semibold text-black">your taxi service?</h2>
+          <h2 className="text-4xl font-semibold text-black">Ride Click?</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

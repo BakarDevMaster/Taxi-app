@@ -43,11 +43,11 @@ const Footer = () => {
     { title: 'About', href: '/about' },
     { title: 'Careers', href: '/careers' },
     { title: 'Events', href: '/events' },
-    { title: 'Terms & Conditions', href: '/terms' },
+    { title: 'Terms & Conditions', href: '/general-terms-and-conditions' },
   ];
 
   const appLinks: FooterLink[] = [
-    { title: 'Privacy Policy', href: '/privacy-policy' },
+    { title: 'Privacy Policy', href: '/general-privacy-policy' },
     { title: 'Super App', href: '/super-app' },
     { title: 'Operator App', href: '/operator-app' },
     { title: 'My hub', href: '/my-hub' },

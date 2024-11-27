@@ -8,14 +8,14 @@ const MyHub = () => {
         {/* Header Content */}
         <div className=" flex justify-between mb-12">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Find growth points with{' '}
+          Identify Key Growth Areas{' '}
             
-            <span className="text-[#E91E63] block"> My hub</span>
+            <span className="text-[#E91E63] block mt-2"> My Hub Admin Panel</span>
           </h2>
           
           <div className="max-w-96">
             <p className="text-gray-800 text-lg mb-4">
-            Use My hub admin panel to manage drivers, operators, and services, and dive into performance analytics to make data-driven decisions
+            A robust admin panel to oversee drivers, operators, and services while analyzing performance to guide decisions.
             </p>
             {/* Green line below paragraph */}
             <div className="h-3 bg-[#E91E63] w-full"></div>

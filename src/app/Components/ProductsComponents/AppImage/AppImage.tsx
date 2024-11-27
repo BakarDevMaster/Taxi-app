@@ -46,12 +46,7 @@ const AppImage = () => {
             
             {/* Description */}
             <p className="text-white/90 text-lg leading-relaxed mb-8">
-              Customizable application to attract customers in your city, as well as visiting tourists. 
-              Easy-to-use app that knows user&apos;s location and language, and the design makes the service enjoyable. 
-              Full control of the payment methods available in your company for customers. 
-              Let customers rate drivers and drivers rate customers. 
-              Wide variety of service types for every occasion. 
-              Maintained and updated every month!
+            Ride Click&apos;s taxi booking app is designed for ease of use, allowing customers to book a ride in just a few simple steps. The app&apos;s straightforward interface makes it easy for users to request a ride, helping you retain customers with every booking.
             </p>
             
           

@@ -29,18 +29,18 @@ const FeatureCard = ({ title, description, imageSrc }: FeatureCardProps) => (
 const BusinessServices = () => {
   const features = [
     {
-      title: "Opportunity to double revenue",
-      description: "by offering multiple services from one app",
+      title: "Higher Revenue Potential",
+      description: "Serve multiple needs through a single platform",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Better use of drivers' time",
-      description: "they can also work as couriers",
+      title: "Better Driver Utilization",
+      description: "Keep drivers engaged by offering delivery services",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Cheaper customer acquisition",
-      description: "offer multiple services within a single platform",
+      title: "Cost-Effective Customer Acquisition",
+      description: "Offer diverse services to retain customers",
       imageSrc: "/api/placeholder/300/300",
     },
     

@@ -46,12 +46,7 @@ const DriverImage = () => {
             
             {/* Description */}
             <p className="text-white/90 text-lg leading-relaxed mb-8">
-            - Easy online registration
-- No-nonsense workflow
-- Intelligent algorithm to assign orders
-- Possibility to contact and rate passengers
-- Automated drivers billing
-- Cash and card payments
+            With the cab booking software app for drivers, Ride Click ensures your drivers can manage their work on the go. Drivers can easily register, accept orders, track earnings, and view ride details. The app is built to simplify tasks, so drivers can focus on providing great service.
             </p>
             
           

@@ -22,11 +22,11 @@ const Operatorapp: React.FC = () => {
             <div className="w-full md:w-[75%]  mb-8 flex space-x-10 md:mb-0 pr-4">
               
               <p className="text-lg md:text-xl mb-6">
-              Functional and intuitive interface of the system helps operators to provide a quicker more efficient service by collecting all orders on one dashboard, listed and sorted by relevancy.
+              The operator app is ideal for businesses that handle bookings over the phone. It enables operators to quickly assign rides to drivers, providing a seamless manual dispatch process for customers who prefer not to use a mobile app.
               </p>
-              <p className="text-lg md:text-xl mb-6">
+              {/* <p className="text-lg md:text-xl mb-6">
               Address search works like a swiss clock — we spend a lot of effort to make it effective and easy-to-use. Worldwide geo-coding is only available in our taxi software.
-              </p>
+              </p> */}
             </div>
             
             {/* Right Section (Text, Button, and Referral Text) */}

@@ -7,8 +7,8 @@ interface CTAButtonProps {
 }
 
 const BusinessBTN: React.FC<CTAButtonProps> = ({
-  buttonText = "Learn more about Super App",
-  subtitleText = "",
+  buttonText = "Learn more",
+  subtitleText = "See how Super App can work for your business",
   onClick
 }) => {
   return (

@@ -29,18 +29,18 @@ const FeatureCard = ({ title, description, imageSrc }: FeatureCardProps) => (
 const Performance = () => {
   const features = [
     {
-      title: "Easy and flexible order acceptance",
-      description: "back-to-back rides, preorders, instant orders.",
+      title: "Flexible Order Acceptance",
+      description: "Accept back-to-back rides, preorders, or instant orders with ease",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Transparent earnings and easy payouts",
-      description: "in-app Wallet, any payment method to accept payments, including local payment gateways",
+      title: "Transparent Earnings and Simple Payouts",
+      description: "Use in-app Wallets and support for multiple payment methods",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Gamification features",
-      description: "for driver motivation",
+      title: "Driver Motivation Features",
+      description: "Gamification elements to encourage higher engagement",
       imageSrc: "/api/placeholder/300/300",
     },
   ];
@@ -50,9 +50,9 @@ const Performance = () => {
       <div className="space-y-8">
         <div className="space-y-4">
           <h2 className="text-4xl font-semibold text-gray-300">
-          Why will you <span className="font-semibold text-black">get improved driver</span>
+          How Ride Click<span className="font-semibold text-black"> Improves</span>
           </h2>
-          <h2 className="text-4xl font-semibold text-black">performance with Onde’s Driver app?</h2>
+          <h2 className="text-4xl font-semibold text-black"> Driver Performance?</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

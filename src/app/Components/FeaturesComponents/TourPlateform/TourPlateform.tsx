@@ -8,9 +8,9 @@ const TourPlateformorm: React.FC = () => {
       <div className="w-full max-w-4xl mx-auto text-center">
         {/* Heading with responsive size and proper spacing */}
         <h1 className="text-[2.5rem] md:text-[3.5rem] lg:text-[5rem] leading-tight font-bold text-black mb-12">
-          Take a tour of the
+        Ride Click Platform 
           <br />
-          Onde platform
+          Overview
         </h1>
 
         {/* CTA Button */}

@@ -29,33 +29,33 @@ const FeatureCard = ({ title, description, imageSrc }: FeatureCardProps) => (
 const  Passengers = () => {
   const features = [
     {
-      title: "User-friendly design and usability",
-      description: "multiple drop-offs, favorite addresses, built-in in-app chat with drivers, and more!",
+      title: "Simple and User-Friendly Design",
+      description: "Includes multiple drop-offs, favorite addresses, and in-app chat for smooth interaction.",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "All possible ordering options",
-      description: "instant ordering, pre-ordering, order for corporate clients, etc.",
+      title: "Flexible Booking Options",
+      description: "Instant orders, pre-orders, and bookings for corporate clients made easy.",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Safety features",
-      description: "real-time tracking, option to share your ride with friends, SOS button",
+      title: "Comprehensive Safety Measures",
+      description: "Real-time tracking, shareable ride details, and an SOS button for added peace of mind.",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "All payment methods available",
-      description: "cash, debit card, credit card, MTN method, terminal, dozens of payment gateways, Customer Wallet.",
+      title: "Multiple Payment Methods",
+      description: "Supports cash, credit/debit cards, and local payment gateways for convenience.",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "App stability in any conditions",
-      description: "rush hours or high demand season, it doesn’t matter - we have 99.8 uptime!",
+      title: "High Reliability",
+      description: " With 99.8% uptime, the app works seamlessly during rush hours or high demand.",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Regular updates",
-      description: "for Android and iOS at no extra fees",
+      title: "Frequent Updates",
+      description: "Regular app updates for a better user experience at no additional cost.",
       imageSrc: "/api/placeholder/300/300",
     },
   ];

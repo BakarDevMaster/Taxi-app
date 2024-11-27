@@ -29,13 +29,13 @@ const FeatureCard = ({ title, description, imageSrc }: FeatureCardProps) => (
 const Attract = () => {
   const features = [
     {
-      title: "ASO and marketing services",
-      description: "your Driver app will be in relevant ads on social media and Google and get on top of app stores",
+      title: "Effective Marketing",
+      description: "Social media and app store visibility for your Driver app",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Branded Driver app",
-      description: "local drivers will know and recognize your service",
+      title: "Brand Recognition",
+      description: "Drivers will instantly identify your service",
       imageSrc: "/api/placeholder/300/300",
     },
     
@@ -46,9 +46,9 @@ const Attract = () => {
       <div className="space-y-8">
         <div className="space-y-4">
           <h2 className="text-4xl font-semibold text-gray-300">
-            How will Onde <span className="font-semibold text-black">attract</span>
+          Attracting   <span className="font-semibold text-black">Drivers</span>
           </h2>
-          <h2 className="text-4xl font-semibold text-black">more drivers?</h2>
+          <h2 className="text-4xl font-semibold text-black">Made Easy</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

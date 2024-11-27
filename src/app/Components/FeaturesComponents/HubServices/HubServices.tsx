@@ -29,33 +29,33 @@ const FeatureCard = ({ title, description, imageSrc }: FeatureCardProps) => (
 const  HubServices = () => {
   const features = [
     {
-      title: "Flexible admin panel",
-      description: "easily set up and customize driver plans and services",
+      title: "Customizable Driver Plans",
+      description: "Easily adjust services to match your business needs",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Business performance metrics",
-      description: "understand your business metrics and see growth points",
+      title: "Performance Insights",
+      description: "Understand metrics and identify opportunities for growth",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Marketing campaigns",
-      description: "launch flexible marketing campaigns",
+      title: "Marketing Campaigns",
+      description: "Launch flexible promotions to attract users",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Set up fixed fare zones",
-      description: "fixed fare zones allow you to charge set prices for traveling between zones",
+      title: "Fixed Fare Zones",
+      description: "Offer predictable pricing for zone-based rides",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Partner with corporate clients",
-      description: "cooperate with companies that are willing to pay for the trips of their employees or customers",
+      title: "Corporate Partnerships",
+      description: "Build relationships with businesses for client-sponsored trips",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Work from any device",
-      description: "access from your phone, tablet, laptop, or desktop computer",
+      title: "Accessibility on Any Device",
+      description: "Manage operations from your phone, tablet, or desktop",
       imageSrc: "/api/placeholder/300/300",
     },
   ];

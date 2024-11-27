@@ -29,18 +29,18 @@ const FeatureCard = ({ title, description, imageSrc }: FeatureCardProps) => (
 const WebAppService = () => {
   const features = [
     {
-      title: "No installs required",
-      description: "let your customers book taxis directly from their browsers",
+      title: "No downloads required",
+      description: "Just book and go",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Partner with other businesses",
-      description: "partner with restaurants, bars, hotels, agencies, etc., and offer rides to their clients",
+      title: "Partnership Opportunities",
+      description: "Collaborate with hotels, restaurants, and shopping centers to offer rides to their clients",
       imageSrc: "/api/placeholder/300/300",
     },
     {
-      title: "Accessible for everyone",
-      description: "make your services available to Huawei, Windows Phone, and laptop users",
+      title: "Access for All Devices",
+      description: "Available for Huawei, Windows Phones, laptops, and more",
       imageSrc: "/api/placeholder/300/300",
     },
     
