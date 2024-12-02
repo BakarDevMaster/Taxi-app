@@ -54,7 +54,6 @@ const Hero: React.FC = () => {
         </h1>
         <p className="text-lg  mx-auto text-gray-600">
         We make running your ride-hailing business easier by automating operations 
-
           <br />
           and providing practical solutions to improve efficiency, keep your users engaged, and help your business grow.
         </p>

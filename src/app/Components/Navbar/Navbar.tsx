@@ -111,6 +111,9 @@ const Navbar: React.FC = () => {
                 <li className="p-2 hover:bg-gray-100 cursor-pointer" onClick={() => router.push('/mobile-app-marketing-agency')}>
                   Agency
                 </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer" onClick={() => router.push('/aboutus')}>
+                  About us
+                </li>
                 <li className="p-2 hover:bg-gray-100 cursor-pointer" onClick={() => router.push('/top-ride-hailing-platforms')}>
                   Ride-hailing apps
                 </li>
