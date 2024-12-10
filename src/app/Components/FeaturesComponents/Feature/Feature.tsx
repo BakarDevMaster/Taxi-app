@@ -36,7 +36,7 @@ const FeatureSection = () => {
     {
       title: "Discount and Referral Programs",
       description: "Encourage word-of-mouth promotion by rewarding users for sharing your service.",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/Discount.jpeg",
     },
     {
       title: "ASO and Marketing Services",
@@ -50,7 +50,7 @@ const FeatureSection = () => {
       <div className="space-y-8">
         <div className="space-y-4">
           <h2 className="text-4xl font-semibold text-gray-300">
-            How will Onde <span className="font-semibold text-black">get you</span>
+            How will Ride Click <span className="font-semibold text-black">get you</span>
           </h2>
           <h2 className="text-4xl font-semibold text-black">more passengers?</h2>
         </div>

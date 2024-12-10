@@ -31,32 +31,32 @@ const  Passengers = () => {
     {
       title: "Simple and User-Friendly Design",
       description: "Includes multiple drop-offs, favorite addresses, and in-app chat for smooth interaction.",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/loc.jpeg",
     },
     {
       title: "Flexible Booking Options",
       description: "Instant orders, pre-orders, and bookings for corporate clients made easy.",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/preorder.jpeg",
     },
     {
       title: "Comprehensive Safety Measures",
       description: "Real-time tracking, shareable ride details, and an SOS button for added peace of mind.",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/safety.jpeg",
     },
     {
       title: "Multiple Payment Methods",
       description: "Supports cash, credit/debit cards, and local payment gateways for convenience.",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/payment.jpeg",
     },
     {
       title: "High Reliability",
       description: " With 99.8% uptime, the app works seamlessly during rush hours or high demand.",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/rel.jpeg",
     },
     {
       title: "Frequent Updates",
       description: "Regular app updates for a better user experience at no additional cost.",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/update.jpeg",
     },
   ];
 
@@ -65,7 +65,7 @@ const  Passengers = () => {
       <div className="space-y-8">
         <div className="space-y-4">
           <h2 className="text-4xl font-semibold text-gray-300">
-            How will Onde <span className="font-semibold text-black">help retain
+            How will Ride Click <span className="font-semibold text-black">help retain
             </span>
           </h2>
           <h2 className="text-4xl font-semibold text-black">passengers?</h2>

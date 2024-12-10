@@ -31,22 +31,22 @@ const  TexiServices = () => {
     {
       title: "Quick Document Registration",
       description: "Hassle-free onboarding for drivers",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/document.jpeg",
     },
     {
       title: "Intuitive Interface",
       description: "No complex learning curves—easy for everyone to use",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/intultive.jpeg",
     },
     {
       title: "Efficient Ride Allocation",
       description: "Smart algorithms reduce idle time for drivers",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/algo.jpeg",
     },
     {
       title: "Familiar Features",
       description: "Includes notifications, in-app chat, and quick access buttons for convenience",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/uber.jpeg",
     },
     {
       title: "Reliable Performance",
@@ -56,7 +56,7 @@ const  TexiServices = () => {
     {
       title: "Secure Communication",
       description: "Keeps driver-passenger interactions safe and private",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/secure.jpeg",
     },
   ];
 

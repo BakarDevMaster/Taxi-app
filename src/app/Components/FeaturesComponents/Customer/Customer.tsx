@@ -24,7 +24,7 @@ const Customer = () => {
         {/* Single Image Container */}
         <div className="relative w-full aspect-[2/1] rounded-lg overflow-hidden">
           <Image 
-            src="/api/placeholder/2400/1200"
+            src="/Featuresdata/Customer.jpeg"
             alt="Customer app showcase with interface and users"
             fill
             className="object-cover"
