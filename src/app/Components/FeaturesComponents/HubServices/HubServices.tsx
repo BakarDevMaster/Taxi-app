@@ -31,32 +31,32 @@ const  HubServices = () => {
     {
       title: "Customizable Driver Plans",
       description: "Easily adjust services to match your business needs",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/admin.jpeg",
     },
     {
       title: "Performance Insights",
       description: "Understand metrics and identify opportunities for growth",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/metrics.jpeg",
     },
     {
       title: "Marketing Campaigns",
       description: "Launch flexible promotions to attract users",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/mark.jpeg",
     },
     {
       title: "Fixed Fare Zones",
       description: "Offer predictable pricing for zone-based rides",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/device.jpeg",
     },
     {
       title: "Corporate Partnerships",
       description: "Build relationships with businesses for client-sponsored trips",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/partner.jpeg",
     },
     {
       title: "Accessibility on Any Device",
       description: "Manage operations from your phone, tablet, or desktop",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/fixed.jpeg",
     },
   ];
 

@@ -51,7 +51,7 @@ const  TexiServices = () => {
     {
       title: "Reliable Performance",
       description: "High uptime and regular maintenance ensure smooth operation",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/Performance.jpeg",
     },
     {
       title: "Secure Communication",

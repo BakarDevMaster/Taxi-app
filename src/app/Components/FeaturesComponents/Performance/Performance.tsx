@@ -31,17 +31,17 @@ const Performance = () => {
     {
       title: "Flexible Order Acceptance",
       description: "Accept back-to-back rides, preorders, or instant orders with ease",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/flex.jpeg",
     },
     {
       title: "Transparent Earnings and Simple Payouts",
       description: "Use in-app Wallets and support for multiple payment methods",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/transparent.jpeg",
     },
     {
       title: "Driver Motivation Features",
       description: "Gamification elements to encourage higher engagement",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/game.jpeg",
     },
   ];
 

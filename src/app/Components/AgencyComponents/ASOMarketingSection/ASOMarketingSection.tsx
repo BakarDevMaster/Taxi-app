@@ -21,10 +21,10 @@ const ASOMarketingSection = () => {
           </div>
           
           {/* Right Image Mockups */}
-          <div className="col-span-8 relative h-[500px]">
+          <div className="col-span-8 relative h-[400px]">
             <div className="relative h-full w-full">
               <Image
-                src="/api/placeholder/800/500"
+                src="/Agencydata/appstore.jpeg"
                 alt="App store mockups"
                 fill
                 className="object-contain"

@@ -6,6 +6,9 @@ import CompanyManagementSystem from '../Components/ProductsComponents/CompanyMan
 import Operatorapp from '../Components/ProductsComponents/Operatorapp/Operatorapp'
 import WebAppImge from '../Components/ProductsComponents/Webapp/Webapp'
 import Client from '../Components/ProductsComponents/Client/Client'
+import Explore from '../Components/ProductsComponents/explore/Explore'
+import DispatchSystem from '../Components/ProductsComponents/Dispatch/DispatchSystem'
+import WebBooking from '../Components/ProductsComponents/WebBooking/WebBooking'
 
 const page = () => {
   return (
@@ -19,14 +22,23 @@ const page = () => {
       <div className='mt-6'>
        <DriverImage/>
       </div>
-      <div className='mt-6'>
+      <div className='mt-16'>
        <CompanyManagementSystem/>
+      </div>
+      <div className='mt-16'>
+       <DispatchSystem/>
+      </div>
+      <div className='mt-16'>
+       <WebBooking/>
       </div>
       <div className='mt-6'>
        <Operatorapp/>
       </div>
       <div className='mt-6'>
        <WebAppImge/>
+      </div>
+      <div className=''>
+       <Explore/>
       </div>
       <div className='mt-6'>
        <Client/>

@@ -1,4 +1,7 @@
+// components/MarketingTrustSection.jsx
+
 import React from 'react';
+import Image from 'next/image';
 
 const MarketingTrustSection = () => {
   return (
@@ -61,11 +64,15 @@ const MarketingTrustSection = () => {
       {/* Right Image Section */}
       <div className="w-full lg:w-1/2 relative">
         <div className="sticky top-0 h-screen flex items-center justify-center">
-          <img
-            src="/api/placeholder/400/800" 
-            alt="Marketing Visual" 
-            className="h-auto max-h-[90vh] w-auto object-contain"
-          />
+          <div className="w-full h-full relative">
+            <Image
+              src="/Agencydata/marketing.jpeg" 
+              alt="Marketing Visual" 
+              layout="fill"
+              objectFit="contain"
+              priority
+            />
+          </div>
         </div>
       </div>
     </div>

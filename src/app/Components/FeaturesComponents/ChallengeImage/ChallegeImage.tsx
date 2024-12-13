@@ -3,9 +3,9 @@ import React from 'react';
 const ChallengeImage = () => {
   return (
     <div 
-      className="relative min-h-[500px] w-full bg-purple-700 bg-[url('/challenge-bg.png')] bg-cover bg-center bg-no-repeat px-4 py-16 sm:px-6 lg:px-8"
+      className="relative min-h-[600px] w-[100%] mx-auto bg-purple-700 bg-[url('/Featuresdata/challenge.jpeg')] bg-cover bg-center bg-no-repeat "
     >
-      <div className="max-w-xl">
+      {/* <div className="max-w-xl">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           We challenge you to find a better offer
         </h1>
@@ -15,7 +15,7 @@ const ChallengeImage = () => {
         <button className="bg-white text-purple-700 px-8 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors">
           Download
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

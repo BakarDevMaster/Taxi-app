@@ -41,7 +41,7 @@ const FeatureSection = () => {
     {
       title: "ASO and Marketing Services",
       description: "Drive app store downloads and convert them into active passengers.",
-      imageSrc: "/api/placeholder/300/300",
+      imageSrc: "/Featuresdata/ASO.jpeg",
     },
   ];
 

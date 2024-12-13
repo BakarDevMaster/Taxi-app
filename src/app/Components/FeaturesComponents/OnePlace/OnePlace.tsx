@@ -29,19 +29,19 @@ const FeatureCard = ({ title, description, imageSrc }: FeatureCardProps) => (
 const OnePlace = () => {
   const features = [
     {
-      title: "ASO and marketing services",
-      description: "your Driver app will be in relevant ads on social media and Google and get on top of app stores",
-      imageSrc: "/api/placeholder/300/300",
+      title: "Manage them all in one place",
+      description: "accept orders via app, phone, website, and messengers",
+      imageSrc: "/Featuresdata/manage.jpeg",
     },
     {
-      title: "Branded Driver app",
-      description: "local drivers will know and recognize your service",
-      imageSrc: "/api/placeholder/300/300",
+      title: "Smart, Automatic Solution",
+      description: "automate order distribution and monitor drivers' workload",
+      imageSrc: "/Featuresdata/smart.jpeg",
     },
     {
-      title: "Branded Driver app",
-      description: "local drivers will know and recognize your service",
-      imageSrc: "/api/placeholder/300/300",
+      title: "Manual Mode",
+      description: "switch to manual control to handle issues directly",
+      imageSrc: "/Featuresdata/manual.jpeg",
     },
     
   ];
